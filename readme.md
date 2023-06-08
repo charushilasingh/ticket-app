@@ -8,3 +8,9 @@
 7. Open localhost:3000 in browser and you will see an HTML page.
 8. Enter details and click "Submit" to send the request to API.
 9. The response JSON will be stored in <project_folder>/res/response folder.
+10. You can also test using curl command,
+    curl --location 'localhost:3000/tickets' \
+    --form 'attachment=@"/C:/Documents/dummy.txt"' \
+    --form 'phoneNumber="9898989898"' \
+    --form 'title="Sample Title"' \
+    --form 'description="Sample Desc"'
